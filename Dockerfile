@@ -1,8 +1,8 @@
 FROM openjdk:17.0.1-jdk-slim
 
-WORKDIR /app
+WORKDIR /home/jenkins/Maven-Sample-Application/
 
-COPY /home/jenkins/Maven-Sample-Application/target/demo-0.0.1-SNAPSHOT /app/demo.jar
+COPY target/demo-0.0.1-SNAPSHOT /app/demo.jar
 
 EXPOSE 8080
 
